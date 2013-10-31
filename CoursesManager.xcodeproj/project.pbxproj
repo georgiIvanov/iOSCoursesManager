@@ -22,6 +22,11 @@
 		FFBB7AB0182266C000EB5AF2 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFBB7A94182266BF00EB5AF2 /* CoreData.framework */; };
 		FFBB7AB8182266C000EB5AF2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FFBB7AB6182266C000EB5AF2 /* InfoPlist.strings */; };
 		FFBB7ABA182266C000EB5AF2 /* CoursesManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBB7AB9182266C000EB5AF2 /* CoursesManagerTests.m */; };
+		FFBB7AC91822705300EB5AF2 /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBB7AC81822705300EB5AF2 /* Course.m */; };
+		FFBB7ACB1822708E00EB5AF2 /* MainStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFBB7ACA1822708E00EB5AF2 /* MainStoryBoard.storyboard */; };
+		FFBB7ACE1822768B00EB5AF2 /* CoursesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBB7ACD1822768B00EB5AF2 /* CoursesTableViewController.m */; };
+		FFBF067C1822909B0095F797 /* AddCourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBF067B1822909B0095F797 /* AddCourseViewController.m */; };
+		FFBF06821822A0B50095F797 /* DisplayEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBF06811822A0B50095F797 /* DisplayEditViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,15 @@
 		FFBB7AB5182266C000EB5AF2 /* CoursesManagerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoursesManagerTests-Info.plist"; sourceTree = "<group>"; };
 		FFBB7AB7182266C000EB5AF2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FFBB7AB9182266C000EB5AF2 /* CoursesManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoursesManagerTests.m; sourceTree = "<group>"; };
+		FFBB7AC71822705300EB5AF2 /* Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Course.h; sourceTree = "<group>"; };
+		FFBB7AC81822705300EB5AF2 /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
+		FFBB7ACA1822708E00EB5AF2 /* MainStoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryBoard.storyboard; sourceTree = "<group>"; };
+		FFBB7ACC1822768B00EB5AF2 /* CoursesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoursesTableViewController.h; sourceTree = "<group>"; };
+		FFBB7ACD1822768B00EB5AF2 /* CoursesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoursesTableViewController.m; sourceTree = "<group>"; };
+		FFBF067A1822909B0095F797 /* AddCourseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCourseViewController.h; sourceTree = "<group>"; };
+		FFBF067B1822909B0095F797 /* AddCourseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCourseViewController.m; sourceTree = "<group>"; };
+		FFBF06801822A0B50095F797 /* DisplayEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayEditViewController.h; sourceTree = "<group>"; };
+		FFBF06811822A0B50095F797 /* DisplayEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayEditViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +98,7 @@
 		FFBB7A82182266BE00EB5AF2 = {
 			isa = PBXGroup;
 			children = (
+				FFBB7AC61822705300EB5AF2 /* Models */,
 				FFBB7A96182266BF00EB5AF2 /* CoursesManager */,
 				FFBB7AB3182266C000EB5AF2 /* CoursesManagerTests */,
 				FFBB7A8D182266BF00EB5AF2 /* Frameworks */,
@@ -115,6 +130,13 @@
 		FFBB7A96182266BF00EB5AF2 /* CoursesManager */ = {
 			isa = PBXGroup;
 			children = (
+				FFBB7ACC1822768B00EB5AF2 /* CoursesTableViewController.h */,
+				FFBB7ACD1822768B00EB5AF2 /* CoursesTableViewController.m */,
+				FFBB7ACA1822708E00EB5AF2 /* MainStoryBoard.storyboard */,
+				FFBF06801822A0B50095F797 /* DisplayEditViewController.h */,
+				FFBF06811822A0B50095F797 /* DisplayEditViewController.m */,
+				FFBF067A1822909B0095F797 /* AddCourseViewController.h */,
+				FFBF067B1822909B0095F797 /* AddCourseViewController.m */,
 				FFBB7A9F182266BF00EB5AF2 /* AppDelegate.h */,
 				FFBB7AA0182266BF00EB5AF2 /* AppDelegate.m */,
 				FFBB7AA5182266C000EB5AF2 /* Images.xcassets */,
@@ -151,6 +173,15 @@
 				FFBB7AB6182266C000EB5AF2 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FFBB7AC61822705300EB5AF2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FFBB7AC71822705300EB5AF2 /* Course.h */,
+				FFBB7AC81822705300EB5AF2 /* Course.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFBB7ACB1822708E00EB5AF2 /* MainStoryBoard.storyboard in Resources */,
 				FFBB7A9B182266BF00EB5AF2 /* InfoPlist.strings in Resources */,
 				FFBB7AA6182266C000EB5AF2 /* Images.xcassets in Resources */,
 			);
@@ -249,8 +281,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFBB7AA4182266BF00EB5AF2 /* CoursesManager.xcdatamodeld in Sources */,
+				FFBB7ACE1822768B00EB5AF2 /* CoursesTableViewController.m in Sources */,
 				FFBB7AA1182266BF00EB5AF2 /* AppDelegate.m in Sources */,
+				FFBF06821822A0B50095F797 /* DisplayEditViewController.m in Sources */,
+				FFBF067C1822909B0095F797 /* AddCourseViewController.m in Sources */,
 				FFBB7A9D182266BF00EB5AF2 /* main.m in Sources */,
+				FFBB7AC91822705300EB5AF2 /* Course.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,6 +487,7 @@
 				FFBB7ABF182266C000EB5AF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FFBB7AC0182266C000EB5AF2 /* Build configuration list for PBXNativeTarget "CoursesManagerTests" */ = {
 			isa = XCConfigurationList;
@@ -459,6 +496,7 @@
 				FFBB7AC2182266C000EB5AF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
