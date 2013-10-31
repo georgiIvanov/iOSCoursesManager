@@ -15,4 +15,10 @@
 @dynamic releaseDate;
 @dynamic title;
 
+-(void) awakeFromInsert{
+    [super awakeFromInsert];
+    
+    self.releaseDate = [NSDate date];
+}
+
 @end

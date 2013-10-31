@@ -15,5 +15,11 @@
 @property (weak, nonatomic) IBOutlet UITextField *titleField;
 @property (weak, nonatomic) IBOutlet UITextField *authorField;
 @property (weak, nonatomic) IBOutlet UITextField *dateField;
+@property (weak, nonatomic) IBOutlet UIButton *doneButton;
+@property (weak, nonatomic) IBOutlet UIButton *editButton;
+
+
+- (IBAction)doneEditing:(id)sender;
+- (IBAction)startEditing:(id)sender;
 
 @end

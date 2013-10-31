@@ -72,6 +72,26 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iO3-7F-4w2">
+                                <rect key="frame" x="89" y="66" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="edit">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startEditing:" destination="Y0x-y4-YLk" eventType="touchUpInside" id="f6E-AX-gd8"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TrP-xQ-2sz">
+                                <rect key="frame" x="183" y="66" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="done">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneEditing:" destination="Y0x-y4-YLk" eventType="touchUpInside" id="QPp-QC-hat"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -79,6 +99,8 @@
                     <connections>
                         <outlet property="authorField" destination="8nm-pR-pdG" id="HDk-7q-cSG"/>
                         <outlet property="dateField" destination="6t5-Lc-5ql" id="LJb-wi-Ok7"/>
+                        <outlet property="doneButton" destination="TrP-xQ-2sz" id="MK9-tA-hSS"/>
+                        <outlet property="editButton" destination="iO3-7F-4w2" id="ejg-I2-ehR"/>
                         <outlet property="titleField" destination="r3a-fO-18a" id="3er-GA-IPJ"/>
                     </connections>
                 </viewController>
